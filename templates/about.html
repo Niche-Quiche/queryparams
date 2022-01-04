@@ -1,0 +1,12 @@
+${head}
+
+  <h1>Countries of the EU</h1>
+  <ul>
+    ${ countries.map((country) => {
+      return `<li>${country.country}</li>
+      <li text-decoration="none">${country.population}</li>`
+    }).join('') }
+  </ul>
+
+
+${footer}
